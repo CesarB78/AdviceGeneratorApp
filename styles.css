@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: Manrope;
+  background-color: var(--Dark-Blue);
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Dark-Grayish-Blue);
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+h1 {
+  padding-top: 25px;
+  font-size: 15px;
+  color: var(--Neon-Green);
+  letter-spacing: 2px;
+}
+
+.text p {
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+
+#divisor {
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -39px;
+}
+.btn:hover {
+  border-radius: 180px;
+  box-shadow: 0px 0px 25px 0px rgb(82 255 168 / 70%);
+  cursor: pointer;
+}
+
+.btn #btnGenera {
+  background-image: url(./images/icon-dice.svg);
+  background-color: var(--Neon-Green);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 180px;
+  border: none;
+  cursor: pointer;
+}
+
+.attribution {
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  bottom: 8px;
+}
+.attribution a {
+  color: var(--Neon-Green);
+}
+
+@media (max-width: 500px) {
+  #container {
+    max-width: 335px;
+  }
+}
